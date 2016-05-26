@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Sic codes:</strong>
+  <%= @company.sic_codes %>
+</p>
+
+<p>
+  <strong>Naics codes:</strong>
+  <%= @company.naics_codes %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @company.parent_id %>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>
