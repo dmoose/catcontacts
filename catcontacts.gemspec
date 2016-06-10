@@ -18,5 +18,8 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.2.6"
+  s.add_dependency "geocoder", "~> 1.3.4"
+  s.add_dependency "smarter_csv", "~> 1.1.0"
+  s.add_dependency "phonelib"
 
 end

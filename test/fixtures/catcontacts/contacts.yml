@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  honor: MyString
+  first_name: MyString
+  middle_name: MyString
+  last_name: MyString
+  generation: MyString
+  title: MyString
+  business_id: 
+
+two:
+  honor: MyString
+  first_name: MyString
+  middle_name: MyString
+  last_name: MyString
+  generation: MyString
+  title: MyString
+  business_id: 

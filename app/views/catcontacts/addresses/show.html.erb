@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aline1:</strong>
+  <%= @address.aline1 %>
+</p>
+
+<p>
+  <strong>Aline2:</strong>
+  <%= @address.aline2 %>
+</p>
+
+<p>
+  <strong>Aline2:</strong>
+  <%= @address.aline2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @address.city %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @address.region %>
+</p>
+
+<p>
+  <strong>Postal:</strong>
+  <%= @address.postal %>
+</p>
+
+<p>
+  <strong>County:</strong>
+  <%= @address.county %>
+</p>
+
+<p>
+  <strong>Formatted Address:</strong>
+  <%= @address.formatted_address %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @address.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @address.longitude %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @address.country %>
+</p>
+
+<%= button_to 'Geocode', geocode_address_path(@address) %>
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>
+
+<div>
+  <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@address.latitude},#{@address.longitude}&markers=#{@address.latitude},#{@address.longitude}&zoom=14&size=640x400&key=#{Rails.configuration.x.constants['google_maps']}", class: 'img-fluid img-rounded', alt: "#{@address.region} on the map"%>
+</div>

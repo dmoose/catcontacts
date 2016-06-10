@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @email.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @email.description %>
+</p>
+
+<p>
+  <strong>Catcontacts contact:</strong>
+  <%= @email.catcontacts_contact %>
+</p>
+
+<%= link_to 'Edit', edit_email_path(@email) %> |
+<%= link_to 'Back', emails_path %>
